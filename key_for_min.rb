@@ -2,5 +2,5 @@
 # Given a hash with numeric values, return the key for the smallest value
 
 def key_for_min_value(name_hash)
-  name_hash.max_by.map {|k,v| v}.[0]
+  name_hash.map {|k,v| v.max_by k[0]}
 end
